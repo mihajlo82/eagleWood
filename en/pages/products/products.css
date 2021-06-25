@@ -1,0 +1,228 @@
+/* ///////////////////////// PRODUCT STYLING  //////////////////////////////////// */
+
+#main-products {
+    width: 100vw;
+}
+
+.title-main-prod {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-main-prod h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgb(83, 83, 83);
+    padding-bottom: 20px;
+}
+
+.main-products-content-wrapper {
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+}
+
+.product-main-spacer {
+    width: 10%;
+    /* background-color: rgb(173, 75, 75); */
+}
+
+.product-main-content {
+    width: 80%;
+    /* background-color: rgb(226, 226, 226); */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.product-item {
+    width: 45%;
+    height: 400px;
+    border: 1px solid rgb(131, 131, 131);
+    background-color: white;
+    margin: 0 20px;
+    position: relative;
+    background-position: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-decoration: none;
+}
+
+.pr1{
+    background: url("../../images/products/ogr/img1112.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pr2{
+    background: url("../../images/products/ogr/img1113.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title-prod-main {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 85%;
+    opacity: 0.8;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-prod-main>p {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.title-prod-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    background-color: rgb(41, 41, 41);
+    opacity: 0.9;
+    font-size: 1.25rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.title-prod-item:hover {
+    opacity: 0.99;
+    font-style: italic;
+}
+
+
+/* ///////////////////////// PRODUCTS STYLING  END //////////////////////////////////// */
+
+
+/* ///////////////////////// RESPONSIVE //////////////////////////////////// */
+
+@media screen and (max-width: 1210px) {
+    .product-main-content {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .title-prod-main>p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .title-main-prod h1 {
+        padding-bottom: 1px;
+    }
+    .product-main-content {
+        justify-content: center;
+    }
+    .title-prod-main>p {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 869px) {
+    .title-prod-main>p {
+        font-size: 1.55rem;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .product-main-content {
+        width: 80%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        /* background-color: orange; */
+    }
+    .product-item {
+        width: 95%;
+        margin-top: 15px;
+    }
+    .title-prod-main>p {
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .title-prod-main>p {
+        font-size: 1.85rem;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .product-item {
+        height: 333px;
+    }
+}
+
+@media screen and (max-width: 442px) {
+    .product-main-spacer {
+        width: 1%;
+    }
+    .product-main-content {
+        width: 98%;
+    }
+    .title-prod-main>p {
+        font-size: 1.55rem;
+    }
+}
+
+@media screen and (max-width: 309px) {
+    .title-main-prod>h1 {
+        font-size: 1.75rem;
+    }
+    .product-item {
+        height: 300px;
+    }
+    .title-prod-main>p {
+        font-size: 1.4rem;
+    }
+    .title-prod-item>p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 249px) {
+    .title-main-prod>h1 {
+        font-size: 1.55rem;
+    }
+    .title-prod-main>p {
+        font-size: 1.2rem;
+    }
+    .title-prod-item>p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 209px) {
+    .title-main-prod>h1 {
+        font-size: 1.25rem;
+    }
+    .title-prod-main>p {
+        font-size: 0.8rem;
+    }
+    .title-prod-item>p {
+        font-size: 0.67rem;
+    }
+}

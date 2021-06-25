@@ -1,0 +1,198 @@
+/* ///////////////////////// CONTACT TITLE //////////////////////////////////// */
+
+#contact-title {
+    width: 100vw;
+    height: 8vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-title h1 {
+    font-size: 2.5rem;
+    color: rgb(107, 107, 107);
+}
+
+
+/* /////////////////////////  CONTACT TITLE  END //////////////////////////////////// */
+
+
+/* ///////////////////////// CONTACT STYLING  //////////////////////////////////// */
+
+#contact-main {
+    width: 100vw;
+    height: 65vh;
+    /* background-color: blueviolet; */
+    display: flex;
+}
+
+.spacer-contact {
+    width: 14%;
+    height: 100%;
+    /* background-color: green; */
+}
+
+.contact-main-section {
+    width: 72%;
+    height: 100%;
+    /* background-color: rgb(39, 95, 39); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-main-section-inner {
+    width: 80%;
+    height: 80%;
+    /* background-color: grey; */
+    display: flex;
+}
+
+.contact-social {
+    width: 60%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+}
+
+.soc {
+    padding-top: 4%;
+    padding-left: 3%;
+    width: 100%;
+    /* background-color: rgb(240, 240, 240); */
+    display: flex;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 500;
+    color: rgb(71, 71, 71);
+}
+
+.tel-contact {
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+.contact-map {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+
+.gmap {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ///////////////////////// CONTACT STYLING  END //////////////////////////////////// */
+
+
+/* ///////////////////////// RESPONSIVE //////////////////////////////////// */
+
+@media screen and (max-width: 1300px) {
+    .nav ul {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 948px) {
+    .nav-wrapper {
+        display: none;
+    }
+    .spacer {
+        width: 50%;
+    }
+    .hidden-menu {
+        display: flex;
+    }
+    .logos-contact {
+        width: 35px;
+        height: 35px;
+    }
+    #contact-title h1 {
+        font-size: 1.9rem;
+    }
+    .soc {
+        padding-top: 7%;
+        padding-left: 5%;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .tel-contact {
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+    .spacer-contact {
+        width: 0;
+        height: 0;
+    }
+    .contact-main-section {
+        width: 100%;
+    }
+    .contact-map {
+        width: 50%;
+    }
+    .contact-social {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    #contact-main {
+        margin-top: 20px;
+    }
+    .burger-menu {
+        width: 39px;
+        height: 39px;
+    }
+    .contact-main-section-inner {
+        /* width: 80%;
+        height: 80%; */
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-title {
+        align-items: flex-start;
+        margin-top: -20px;
+    }
+    .contact-main-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .soc {
+        padding-top: 3%;
+        padding-left: 5%;
+        font-size: 0.95rem;
+        background-color: white;
+    }
+    .contact-social {
+        width: 100%;
+        padding-top: 0;
+    }
+    .contact-map {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 306px) {
+    .logos-contact {
+        widtH: 29px;
+        height: 29px;
+    }
+    .soc {
+        padding-top: 3%;
+        padding-left: 5%;
+        font-size: 0.85rem;
+        background-color: white;
+    }
+    #contact-title {
+        margin-top: 0px;
+    }
+}
