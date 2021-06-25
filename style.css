@@ -1,0 +1,320 @@
+/*////////////////////////////////////////////////////////
+       PRELOADER
+//////////////////////////////////////////////////////  */
+
+.preload{
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*////////////////////////////////////////////////////////
+        PRELOADER END
+//////////////////////////////////////////////////////  */
+
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-899px);
+        display: none;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+body {
+    background-color: white;
+}
+
+
+/*////////////////////////////////////////////////////////
+        SOCIAL AND LANGUAGE SECTION
+//////////////////////////////////////////////////////  */
+
+.social-and-lang {
+    width: 100vw;
+    display: flex;
+}
+
+.space-soc-lang {
+    width: 30%;
+}
+
+.soc-wrapper {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.soc-wrapper a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1.05rem;
+    color: black;
+    margin: 0 0px;
+}
+
+.soc-flag {
+    padding-left: 0px;
+    margin-top: 7px;
+    width: 22px;
+    height: 22px;
+}
+
+.languages-wrapper {
+    width: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages-wrapper a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    font-size: 1.rem;
+    color: black;
+    margin: 0 10px;
+}
+
+.engl-flag {
+    padding-left: 3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.languages-wrapper .active-flag {
+    text-decoration: underline;
+}
+
+
+/*////////////////////////////////////////////////////////
+        END SOCIAL AND LANGUAGE SECTION
+//////////////////////////////////////////////////////  */
+
+
+/* ///////////////////////// MAIN STYLING //////////////////////////////////// */
+
+#main {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+
+.spac-maker {
+    width: 7%;
+}
+
+.main-content {
+    width: 86%;
+    background-image: url("images/gallery/img09.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    /* opacity: 0.75; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.img-overlay {
+    font-size: 4.5rem;
+    word-spacing: 15px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 15px;
+    text-decoration: none;
+    /* padding: 19px 40px; */
+    font-size: 1.33rem;
+    background-color: rgb(10, 194, 10);
+    opacity: 0.85;
+    border: 5px solid white;
+    color: white;
+    border-radius: 7px;
+    width: 17%;
+    text-align: center;
+    padding: 16px 0;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+/* ///////////////////////// MAIN STYLING END //////////////////////////////////// */
+
+
+/* /////////////////////////  ////////////////////////////////// 
+                        RESPONSIVE
+/////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1300px) {
+    .img-overlay {
+        font-size: 3.5rem;
+        word-spacing: 8px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .btn {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 1111px) {
+    .bl {
+        display: block;
+    }
+    .btn {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 948px) {
+    .main-content {
+        background-position-x: center;
+        background-position-y: center;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .img-overlay {
+        font-size: 2.5rem;
+        word-spacing: 8px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .btn {
+        margin-top: 15px;
+        width: 50%;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .space-soc-lang {
+        width: 0%;
+    }
+    .soc-wrapper {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .soc-wrapper a {
+        width: 30px;
+        height: 30px;
+    }
+    .soc-flag {
+        width: 20px;
+        height: 20px;
+    }
+    .languages-wrapper {
+        width: 50%;
+        justify-content: flex-end;
+    }
+    .languages-wrapper a {
+        width: 37px;
+        height: 37px;
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+    .engl-flag {
+        padding-left: 3px;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+    }
+    .img-overlay {
+        font-size: 2rem;
+        word-spacing: 10px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .btn {
+        padding: 14px 25px;
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .spac-maker {
+        width: 4%;
+    }
+    .main-content {
+        width: 92%;
+    }
+    .img-overlay {
+        font-size: 1.86rem;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .btn {
+        padding: 14px 20px;
+        font-size: 1.12rem;
+    }
+}
+
+@media screen and (max-width: 307px) {
+    .img-overlay {
+        font-size: 1.87rem;
+        word-spacing: 2px;
+    }
+    .btn {
+        padding: 8px 17px;
+        font-size: 0.88rem;
+    }
+}
+
+@media screen and (max-width: 233px) {
+    .img-overlay {
+        font-size: 1.27rem;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 179px) {
+    .img-overlay {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.7rem;
+    }
+}

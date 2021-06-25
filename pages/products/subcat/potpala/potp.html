@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sekcija potpala prikazuje sve proizvode dostupne u toj kategoriji">
+    <meta name="keywords" content="drvo za potpalu, potpala eagle wood, derventa, kategorija">
+
+    <title>Drvoprerada Eagle Wood Derventa | Proizvodi | Potpala</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> -->
+
+
+    <!-- CSS & FAVICON -->
+    <link rel="shortcut icon" href="../../../../images/logoEW.jpg">
+    <link rel="stylesheet" href="../../../../header/headcss.css">
+    <link rel="stylesheet" href="../../../../fonts/raleway.css">
+    <link rel="stylesheet" href="potp.css">
+
+</head>
+
+<body>
+     <!-- --------------------------------
+        Loader js
+    --------------------------------- -->
+    <section class="preload">
+        <div>
+             <img src="../../../../images/Skateboarding.gif" alt="loader">
+        </div>
+    </section>
+  <!-- --------------------------------
+    Loader end 
+--------------------------------- -->
+
+
+    <!-- -------------------
+            hidden menu js 
+        ---------------------->
+    <section class="hidden-menu-js">
+
+        <div class="top-hidden-menu">
+            <img class="hidd-close-logo" src="../../../../images/icons8-close-window-48.png" alt="close">
+        </div>
+
+        <nav class="nav-hidd">
+            <ul>
+                <li><a href="../../../../index.html">Početna</a></li>
+                <li><a href="../../../about/about.html">O nama</a></li>
+                <li><a class="active-hidden" href="../../products.html">Proizvodi</a></li>
+                <li><a href="../../../photos/photos.html">Galerija</a></li>
+                <li><a href="../../../contact/contact.html">Kontakt</a></li>
+            </ul>
+    </section>
+    <!-- -------------------
+           END hidden menu js 
+        ---------------------->
+
+
+    <!-- --------------------------------------
+           HEADER START
+    -----------------------  ---------------------->
+    <header id="header">
+        <!-- logo  -->
+        <div class="logo-wrapper">
+            <img class="logo-header" src="../../../../images/logoEW.jpg" alt="logo">
+        </div>
+
+        <!-- space maker -->
+        <div class="spacer"></div>
+
+        <!-- menu -->
+        <div class="nav-wrapper">
+            <nav class="nav">
+                <ul>
+                    <li><a href="../../../../index.html">Početna</a></li>
+                    <li><a href="../../../about/about.html">O nama</a></li>
+
+                    <li class="expand-arrow "><a class="link-prod active" href="../../products.html">Proizvodi <img class="arrow-down" src="../../../../images/icons8-expand-arrow-20.png" alt=""> </a>
+                        <!-- <img class="arrow-down" src="images/icons8-expand-arrow-20.png" alt=""> -->
+                        <ul class="expand-down-menu">
+                            <li> <a href="../ogrjev/ogr.html">Ogrjevno drvo </a> </li>
+                            <li><a href="#">Potpala </a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../../../photos/photos.html">Galerija</a></li>
+                    <li><a href="../../../contact/contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- hidden burger menu -->
+        <div class="hidden-menu">
+            <img class="burger-menu" src="../../../../images/icons8-menu-48.png" alt="burger menu">
+        </div>
+
+    </header>
+
+    <!---------------------------------------------------------------------------
+                            header END
+    -----------------------------------------------------------------------------  -->
+
+    <main id="main-potp-wrapper">
+        <section class="main-potp">
+
+            <!-- TITTLE OGR -->
+            <div class="title-potp">
+                <h1>Potpala</h1>
+
+                <p>Uskoro...</p>
+
+                <a href="../../../../index.html">
+                    <button>
+                        Nazad na početnu
+                    </button>
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="../../../../header/headcss.js"></script>
+    <script>
+        let preload = document.querySelector('.preload');
+        let logo  = document.querySelector('.logo-header');   
+        logo.addEventListener('click', () => location.href ='../../../../index.html');
+        window.addEventListener('load', () => preload.style.display = 'none');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="U nasoj sekciji o slikama mozete se ukratko upoznati sa nasim proizvodima.">
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="title" content="Eagle Wood Derventa galerija">
+    <meta name="keywords" content="galerija, eagle wood derventa, slike, rs, bih">
+
+    <title>Drvoprerada Eagle Wood | Galerija</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> -->
+
+
+    <link rel="shortcut icon" href="../../images/logoEW.jpg">
+    <link rel="stylesheet" href="../../fonts/raleway.css">
+    <link rel="stylesheet" href="../../header/headcss.css">
+    <link rel="stylesheet" href="photos.css">
+</head>
+
+<body>
+ <!-- --------------------------------
+        Loader js
+    --------------------------------- -->
+    <section class="preload">
+        <div>
+             <img src="../../images/Skateboarding.gif" alt="loader">
+        </div>
+    </section>
+
+  <!-- --------------------------------
+    Loader end 
+--------------------------------- -->
+
+    <!-- hidden menu js -->
+    <section class="hidden-menu-js">
+
+        <div class="top-hidden-menu">
+            <img class="hidd-close-logo" src="../../images/icons8-close-window-48.png" alt="close">
+        </div>
+
+        <nav class="nav-hidd">
+            <ul>
+                <li><a href="../../index.html">Početna</a></li>
+                <li><a href="../about/about.html">O nama</a></li>
+                <li><a href="../products/products.html">Proizvodi</a></li>
+                <li><a class="active-hidden active" href="#">Galerija</a></li>
+                <li><a href="../contact/contact.html">Kontakt</a></li>
+            </ul>
+
+    </section>
+
+
+    <header id="header">
+        <!-- logo  -->
+        <div class="logo-wrapper">
+            <img class="logo-header" src="../../images/logoEW.jpg" alt="logo">
+        </div>
+
+        <!-- space maker -->
+        <div class="spacer"></div>
+
+        <!-- menu -->
+        <div class="nav-wrapper">
+            <nav class="nav">
+                <ul>
+                    <li><a href="../../index.html">Početna</a></li>
+                    <li><a href="../about/about.html">O nama</a></li>
+
+                    <li class="expand-arrow "><a class="link-prod" href="../products/products.html">Proizvodi <img class="arrow-down" src="../../images/icons8-expand-arrow-20.png" alt=""> </a>
+                        <!-- <img class="arrow-down" src="images/icons8-expand-arrow-20.png" alt=""> -->
+                        <ul class="expand-down-menu">
+                            <li> <a href="../products/subcat/ogrjev/ogr.html">Ogrjevno drvo </a> </li>
+                            <li><a href="../products/subcat/potpala/potp.html">Potpala </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="active"><a href="photos.html">Galerija</a></li>
+                    <li><a href="../contact/contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- hidden burger menu -->
+        <div class="hidden-menu">
+            <img class="burger-menu" src="../../images/icons8-menu-48.png" alt="burger menu">
+        </div>
+
+    </header>
+    <!---------------------------------------------------------------------------
+                            header END
+    -----------------------------------------------------------------------------  -->
+
+    <!---------------------------------------------------------------------------
+                            Photos main
+    -----------------------------------------------------------------------------  -->
+
+    <section id="photos-main">
+        <div class="section-photos-header">
+            <h1>Galerija</h1>
+        </div>
+
+        <div class="photos-main-content">
+
+            <div class="spacer-photos"></div>
+
+            <div class="content-photos">
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item3"></div>
+                <div class="item item4"></div>
+                <div class="item item5"></div>
+                <div class="item item6"></div>
+                <div class="item item7"></div>
+
+                <div class="item item8"></div>
+                <div class="item item9"></div>
+                <div class="item item10"></div>
+                <div class="item item11"></div>
+                <div class="item item12"></div>
+                <!-- <div class="item item13"></div>
+                <div class="item item14"></div> -->
+            </div>
+
+            <div class="spacer-photos"></div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------------------------
+                            Photos main END
+    -----------------------------------------------------------------------------  -->
+
+
+    <script src="../../header/headcss.js"></script>
+    <script>
+        let preload = document.querySelector('.preload');
+        let logo  = document.querySelector('.logo-header');   
+        logo.addEventListener('click', () => location.href ='../../index.html');
+        window.addEventListener('load', () => preload.style.display = 'none');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Eagle Wood je kompanija koja je nastanjena u Derventi a osnovana je 2020. godine. ">
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="title" content="Eagle Wood Derventa">
+    <meta name="keywords" content="o nama eagle wood, o nama derventa, republika srpska, bosna i hercegovina">
+
+    <title>Drvoprerada Eagle Wood Derventa | O nama </title>
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="../../images/logoEW.jpg">
+    <link rel="stylesheet" href="../../fonts/raleway.css">
+    <link rel="stylesheet" href="../../header/headcss.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+     <!-- --------------------------------
+        Loader js
+    --------------------------------- -->
+    <section class="preload">
+        <div>
+             <img src="../../images/Skateboarding.gif" alt="loader">
+        </div>
+    </section>
+
+  <!-- --------------------------------
+    Loader end 
+--------------------------------- -->
+
+
+    <!-- hidden menu js -->
+    <section class="hidden-menu-js">
+
+        <div class="top-hidden-menu">
+            <img class="hidd-close-logo" src="../../images/icons8-close-window-48.png" alt="close">
+        </div>
+
+        <nav class="nav-hidd">
+            <ul>
+                <li><a href="../../index.html">Početna</a></li>
+                <li><a class="active-hidden" href="about.html">O nama</a></li>
+                <li><a href="../products/products.html">Proizvodi</a></li>
+                <li><a href="../photos/photos.html">Galerija</a></li>
+                <li><a href="../contact/contact.html">Kontakt</a></li>
+            </ul>
+    </section>
+
+
+
+    <header id="header">
+        <!-- logo  -->
+        <div class="logo-wrapper">
+            <img class="logo-header" src="../../images/logoEW.jpg" alt="logo">
+        </div>
+
+        <!-- space maker -->
+        <div class="spacer"></div>
+
+        <!-- menu -->
+        <div class="nav-wrapper">
+            <nav class="nav">
+                <ul>
+                    <li><a href="../../index.html">Početna</a></li>
+                    <li class="active"><a href="about.html">O nama</a></li>
+
+                    <li class="expand-arrow"><a class="link-prod" href="../products/products.html">Proizvodi <img class="arrow-down" src="../../images/icons8-expand-arrow-20.png" alt=""> </a>
+                        <ul class="expand-down-menu">
+                            <li> <a href="../products/subcat/ogrjev/ogr.html">Ogrjevno drvo </a> </li>
+                            <li><a href="../products/subcat/potpala/potp.html">Potpala </a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../photos/photos.html">Galerija</a></li>
+                    <li><a href="../contact/contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- hidden burger menu -->
+        <div class="hidden-menu">
+            <img class="burger-menu" src="../../images/icons8-menu-48.png" alt="burger menu">
+        </div>
+
+    </header>
+    <!---------------------------------------------------------------------------
+                            header END
+    -----------------------------------------------------------------------------  -->
+
+
+
+    <!---------------------------------------------------------------------------
+                           SECTION ABOUT 
+    -----------------------------------------------------------------------------  -->
+    <section id="about-section">
+
+        <!-- spacer-about-section -->
+        <div class="spacer-about"></div>
+
+        <!-- main about section -->
+        <div class="main-about-section">
+            <div class="about-sec1">
+                <div class="ab-sec1-img"></div>
+            </div>
+
+            <div class="about-sec2">
+                <div class="empty-ab"></div>
+                <div class="title-about">
+                    <h1>O nama</h1>
+                </div>
+
+                <div class="text-about">
+                    <p>Firma "Eagle Wood" je preduzeće koje se bavi prodajom i otkupom trupaca razne vrste te preradom iste. Osnovna djelatnost je proizvodnja paletiranog ogrjevnog drveta. Firma posluje pod tim imenom od 2020. godine, a postoji već 20 godina,
+                        kada smo počeli kao porodični biznis, koji je kasnije registrovan u firmu. Naša misija je ponuditi kupcu proizvod za koji možemo garantovati da ispunjava sve zahtjeve što se tiče kvaliteta proizvoda sa pristupačnim cijenama.</p>
+
+                    <p class="nudi">Nudimo:</p>
+
+                    <p class="listt-wrap">
+                        <ul class="listt">
+                            <li>Kvalitetno ogrjevno drvo;</li>
+                            <li>Poštovanje zahtjeva kupaca i rokova isporuke;</li>
+                            <li>Fleksibilnost u ispunjavanju zahtjeva kupaca u pogledu prerade i pakovanja proizvoda;</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- spacer-about-section -->
+        <div class="spacer-about"></div>
+    </section>
+
+    <script src="../../header/headcss.js"></script>
+    <script>
+         let preload = document.querySelector('.preload');
+         let logo  = document.querySelector('.logo-header');   
+        logo.addEventListener('click', () => location.href ='../../index.html');
+        window.addEventListener('load', () => preload.style.display = 'none');
+</script>
+</body>
+
+</html>
